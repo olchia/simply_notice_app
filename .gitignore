@@ -1,0 +1,50 @@
+# macOS
+.DS_Store
+
+# Dart / Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+
+# Flutter generated
+ios/Flutter/.last_build_id
+
+# Xcode / iOS user files
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# CocoaPods
+ios/Pods/
+
+# Firebase Functions dependencies
+firebase/functions/node_modules/
+
+# Logs
+*.log
+firebase-debug.log
+firebase-debug.*.log
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.p8
+*.key
+serviceAccountKey.json
+service-account.json
+
+# IDE
+.vscode/
+.idea/
+ios/Flutter/ephemeral/
