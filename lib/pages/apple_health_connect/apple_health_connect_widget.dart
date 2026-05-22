@@ -47,11 +47,13 @@ class _AppleHealthConnectWidgetState extends State<AppleHealthConnectWidget> {
 
     final types = <HealthDataType>[
       HealthDataType.STEPS,
+      HealthDataType.SLEEP_ASLEEP,
+      HealthDataType.SLEEP_LIGHT,
+      HealthDataType.SLEEP_DEEP,
+      HealthDataType.SLEEP_REM,
     ];
 
-    final permissions = <HealthDataAccess>[
-      HealthDataAccess.READ,
-    ];
+    final permissions = types.map((type) => HealthDataAccess.READ).toList();
 
     try {
       final granted = await health.requestAuthorization(
