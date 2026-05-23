@@ -494,6 +494,8 @@ String? getSleepStatusInterpretation(String? sleepStatus) {
 }
 
 String getStepsStatusInterpretation(String? stepsStatus) {
+  /// MODIFY CODE ONLY BELOW THIS LINE
+
   if (stepsStatus == null || stepsStatus.trim().isEmpty) {
     return 'Пока недостаточно данных, чтобы сравнить сегодняшнюю активность с вашей личной нормой. Когда данных станет больше, интерпретация будет точнее.';
   }
@@ -525,6 +527,8 @@ String getStepsStatusInterpretation(String? stepsStatus) {
   }
 
   return 'Пока недостаточно данных, чтобы корректно интерпретировать этот показатель.';
+
+  /// MODIFY CODE ONLY ABOVE THIS LINE
 }
 
 String getMarkerStatusInterpretation(String? markerStatus) {
